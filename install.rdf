@@ -9,16 +9,17 @@
         <em:type>2</em:type>
         <em:name>Reader View</em:name>
         <em:version>2.2.1</em:version>
-        <em:creator>Ascrod</em:creator>
-        <em:homepageURL>https://repo.palemoon.org/ascrod/readerview</em:homepageURL>
+        <em:creator>FranklinDM</em:creator>
+        <em:contributor>Ascrod</em:contributor>
+        <em:homepageURL>https://github.com/FranklinDM/readerview</em:homepageURL>
         <em:optionsURL>chrome://readerview/content/readerPrefs.xul</em:optionsURL>
         <em:iconURL>chrome://readerview/skin/icons/reader.svg</em:iconURL>
-        <em:description>Port of Firefox Reader View for Pale Moon.</em:description>
+        <em:description>Strip away clutter from pages and customize to your reading preferences.</em:description>
         <em:targetApplication>
             <Description>
                 <em:id>{8de7fcbb-c55c-4fbe-bfc5-fc555c87dbc4}</em:id>
                 <em:minVersion>28.6.0</em:minVersion>
-                <em:maxVersion>28.*</em:maxVersion>
+                <em:maxVersion>31.*</em:maxVersion>
             </Description>
         </em:targetApplication>
     </Description>
