@@ -425,6 +425,7 @@ var AboutReaderListener = {
 };
 
 //Do initialization only once window has fully loaded
-Services.obs.addObserver(function() {
+Services.obs.addObserver(function observer(aSubject, aTopic, aData) {
+  Services.obs.removeObserver(observer, aTopic);
   AboutReaderListener.init();
 }, "browser-delayed-startup-finished", false);
