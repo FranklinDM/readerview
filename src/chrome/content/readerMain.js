@@ -13,7 +13,7 @@ XPCOMUtils.defineLazyModuleGetter(this, "ReaderMode", "resource://gre/modules/Re
 XPCOMUtils.defineLazyModuleGetter(this, "AboutReader", "resource://gre/modules/AboutReader.jsm");
 XPCOMUtils.defineLazyModuleGetter(this, "Readerable", "resource://gre/modules/Readerable.jsm");
 
-var gStrings = Services.strings.createBundle("chrome://readerview/locale/aboutReader.properties");
+var gReaderViewBundle = Services.strings.createBundle("chrome://readerview/locale/aboutReader.properties");
 
 var AboutReaderListener = {
 
@@ -330,13 +330,13 @@ var AboutReaderListener = {
     if (showImages) {
       var button = {
         id: "show-images-button",
-        title: gStrings.GetStringFromName("aboutReader.toolbar.hideImages"),
+        title: gReaderViewBundle.GetStringFromName("aboutReader.toolbar.hideImages"),
         image: "chrome://readerview/skin/reader/RM-Image-Show-24x24.svg"
       };
     } else {
       var button = {
         id: "hide-images-button",
-        title: gStrings.GetStringFromName("aboutReader.toolbar.showImages"),
+        title: gReaderViewBundle.GetStringFromName("aboutReader.toolbar.showImages"),
         image: "chrome://readerview/skin/reader/RM-Image-Hide-24x24.svg"
       };
     }
