@@ -18,7 +18,7 @@ var gReaderViewBundle = Services.strings.createBundle("chrome://readerview/local
 var AboutReaderListener = {
 
   get version() {
-    return "2.2.1";
+    return "2.3.0";
   },
 
   init() {
